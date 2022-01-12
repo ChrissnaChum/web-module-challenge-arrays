@@ -65,10 +65,10 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 //1 parameter array
 function is31Flavors(array){
-  if(array === 31){
-    return true
+  if(array.length === 31){
+    return true;
   }else{
-    return false
+    return false;
   }
 }
  
@@ -195,8 +195,8 @@ function filterByWord(array, flavor){
     if(array[i].includes(flavor)){
       filteredArray.push(array[i])
     }
-    return filteredArray;
   }
+  return filteredArray
   //includes is case sensitive
   //create a new array called filtered array and check each item
   //if the item includes the string i want to push the filtered array
