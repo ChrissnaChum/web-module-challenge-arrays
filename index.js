@@ -72,7 +72,7 @@ function is31Flavors(array){
   }
 }
  
- console.log('task 2', is31Flavors())
+ console.log('task 2', is31Flavors(originalFlavors))
  //want to check the length of array is = to 31
  //return true
  //else we return false
@@ -140,7 +140,7 @@ function getFlavorByIndex(array, number){
   //return array[]
 }
 
-console.log('task 5', getFlavorByIndex(originalFlavors))
+console.log('task 5', getFlavorByIndex(originalFlavors, 4))
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
 as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
@@ -162,6 +162,7 @@ function removeFlavorByName(array, flavor){
       array.splice(i, 1);
     }
   }
+  return array
   //loop through the array
   //white conditional to see if index matches the given flavour
   //return the array
